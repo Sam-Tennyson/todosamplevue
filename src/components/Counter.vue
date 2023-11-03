@@ -1,28 +1,16 @@
-<template>
-    <div>
-        counter: {{ counter }}
-    </div>
-    <input type="text" v-model="name" />
-    <input type="checkbox" v-model="fruits" value="Apple"> Apple
-    <input type="checkbox" v-model="fruits" value="Pear"> Pear
-    <input type="checkbox" v-model="fruits" value="Banana"> Banana
-</template>
-
-<script lang="ts">
-import { defineComponent } from 'vue'
-
-export default defineComponent({
-    setup () {
-        
-
-        return {}
-    },
-    data() {
-        return {
-            counter: 0,
-            name: "jjkjk",
-            fruits: []
-        }
-    }
-})
+<script setup lang="ts">
+import { useCounterStore } from '@/store/counter';
+const storeCounter = useCounterStore();
 </script>
+<template>
+    <div class="border-2 border-gray-500 p-4">
+        The counter is : {{ storeCounter.oddEven }}
+        <div class="flex gap-2">
+            <button class="bg-green-500 text-white px-4 py-2 rounded-lg " @click="storeCounter.increment">+</button>
+            <buttonc class="bg-red-500 text-white px-4 py-2 rounded-lg " @click="storeCounter.decrement">-</buttonc>
+        </div>
+        counter: {{ storeCounter.count }}
+        <br />
+        Enter something: <input class="w-40" type="number" v-model="storeCounter.count">
+    </div>
+</template>

@@ -1,20 +1,12 @@
 <script setup lang="ts">
+import { useTodoStore } from '@/store/todo';
 import TodoItem from './TodoItem.vue';
-
-const props = defineProps(['todos'])
-const emit = defineEmits(['removeTodo'])
-
-const remove = (todo: any) => {
-  emit('removeTodo', todo)
-}
-
+const todoStore = useTodoStore();
 </script>
 <template>
-  <div>
-    <div v-for="todo in props.todos" :key="todo.text">
-      <TodoItem :todo="todo" :onRemove="remove" />
+    <div v-for="todo in todoStore.todos" :key="todo.text">
+      <TodoItem :todo="todo" />
     </div>
-  </div>
 </template>
   
   

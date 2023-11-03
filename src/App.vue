@@ -2,7 +2,6 @@
 import Counter from './components/Counter.vue';
 import TodoHeader from './components/TodoHeader.vue';
 
-
 </script>
 
 <template>
