@@ -1,15 +1,35 @@
+<script setup lang="ts">
+import CardSlot from '@/components/CardSlot.vue';
+import CardSlotProps from '@/components/CardSlotProps.vue';
+</script>
 <template>
-  <div class="about">
-    <h1>This is an about page</h1>
-  </div>
+  <CardSlot>
+    <template v-slot:header>
+      <h3>Header</h3>
+    </template>
+    <template #default>
+      <h3>Default</h3>
+    </template>
+    <template #footer>
+      <h3>footer</h3>
+    </template>
+  </CardSlot>
+  <hr>
+  <CardSlotProps>
+    <template v-slot:default="slotProps">
+      <h2>
+        Name:
+        {{ slotProps.hero_name }}
+      </h2>
+      <h3>
+        Super Hero Name:
+        {{ slotProps.avenger_name }}
+      </h3>
+    </template>
+  </CardSlotProps>
 </template>
 
-<style>
-@media (min-width: 1024px) {
-  .about {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-  }
-}
-</style>
+
+
+
+

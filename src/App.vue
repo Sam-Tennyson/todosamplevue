@@ -1,13 +1,11 @@
 <script setup lang="ts">
-import Counter from './components/Counter.vue';
 import TodoHeader from './components/TodoHeader.vue';
-
 </script>
-
 <template>
-  <Counter />
   <TodoHeader />
-  <RouterView />
+  <div class="w-4/5 m-auto">
+    <RouterView />
+  </div>
 </template>
 <style scoped>
 .navbar {
