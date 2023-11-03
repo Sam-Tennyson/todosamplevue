@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia'
-import type { ITodo } from '@/interfaces/todoInterface';
+import type { IDummyData, ITodo } from '@/interfaces/todoInterface';
 
 export const useTodoStore = defineStore('todo', {
   state: () => {
     return {
       todos: [] as ITodo[],
       newTodo: "" as string,
+      dummyData: [] as IDummyData[],
     }
   },
   actions: {
@@ -28,6 +29,9 @@ export const useTodoStore = defineStore('todo', {
     toggleCompleted(id: number) {
       this.todos[id].completed = !this.todos[id].completed
     },
+    setDummyData(data: IDummyData[]) {
+      this.dummyData = data
+    }
   },
   getters: {
     getTodos(state): ITodo[] {

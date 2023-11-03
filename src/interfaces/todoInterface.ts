@@ -11,3 +11,9 @@ export interface ITodo {
     text: string;
     completed: boolean;
 }
+
+export interface IDummyData {
+    id: number;
+    name: string;
+    username: string;
+}

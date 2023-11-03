@@ -5,6 +5,6 @@ import { RouterLink } from 'vue-router';
 <template>
     <header class="bg-red-900 flex justify-around navbar">
         <RouterLink class="hover:text-white" to="/">Home</RouterLink>
-        <RouterLink class="hover:text-white" to="/about">About</RouterLink>
+        <RouterLink class="hover:text-white" to="/about">About (Layout)</RouterLink>
     </header>
 </template>
