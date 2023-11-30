@@ -60,7 +60,7 @@ const handleAddTodo = () => {
     
   </div>
   <div>
-    <div class="grid grid-flow-row gap-8 text-neutral-600 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4">
+    <div class="grid grid-flow-row gap-2 text-neutral-600 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4">
       <TodoList />
     </div>
   </div>

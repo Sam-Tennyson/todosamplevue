@@ -1,21 +1,12 @@
-<!-- <script setup lang="ts">
-import { RouterLink } from 'vue-router';
-</script>
-
-<template>
-    <header class="bg-red-900 flex justify-around navbar">
-        <RouterLink class="hover:text-white" to="/">Home</RouterLink>
-        <RouterLink class="hover:text-white" to="/about">About (Layout)</RouterLink>
-    </header>
-</template> -->
-
 <script setup lang="ts">
-import backgrouundImage from '@/assets/images/Vector 1.svg'
+import backgrouundImage from '@/assets/images/todo-image.jpg'
 import { RouterLink } from 'vue-router'
 </script>
 
 <template>
-  <img :src="backgrouundImage" alt="bg-image" />
+  <div class=" h-[30vh] mb-2">
+    <img :src="backgrouundImage" alt="bg-image" class="h-full w-full bg-cover bg-center" />
+  </div>
   <div
     class="bg-[rgba(100,94,94,0.69)] px-5 py-2 flex flex-row items-center justify-between fixed top-0 right-0 left-0"
     style="box-shadow: 0px 4px 4px 0px rgba(217, 217, 217, 0.94)"

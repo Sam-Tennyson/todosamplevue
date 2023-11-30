@@ -24,7 +24,7 @@ const handleToggle = () => {
 </script>
 <template>
   <div
-    class="my-8 p-3 rounded  bg-[#e9e8e8]  duration-300 overflow-hidden ">
+    class="my-2 p-3 rounded  bg-[#e9e8e8]  duration-300 overflow-hidden ">
     <div class="flex flex-col items-start justify-start shrink-0 relative">
       <div class="flex items-center justify-between self-stretch shrink-0 relative mb-3">
         <div class="text-lg font-bold leading-relaxed text-gray-800 break-words overflow-hidden">

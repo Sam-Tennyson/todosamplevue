@@ -8,7 +8,11 @@ module.exports = {
     "./node_modules/tw-elements/dist/js/**/*.js"
   ],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'todo-image': "url('src/images/todo-image.jpg')",
+      },
+    },
   },
   darkMode: "class",
   plugins: [require("tw-elements/dist/plugin.cjs")]
