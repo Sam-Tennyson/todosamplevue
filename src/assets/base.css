@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap");
 /* color palette from <https://github.com/vuejs/theme> */
 @tailwind base;
 @tailwind components;
@@ -54,3 +55,6 @@
   }
 }
 
+.btn {
+  @apply rounded-lg px-3 py-1 min-w-[100px] bg-[#eeb3b3]
+}

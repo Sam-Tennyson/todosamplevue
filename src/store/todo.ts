@@ -6,19 +6,22 @@ export const useTodoStore = defineStore('todo', {
     return {
       todos: [] as ITodo[],
       newTodo: "" as string,
+      desc: "" as string,
       dummyData: [] as IDummyData[],
     }
   },
   actions: {
     addTodo() {
-      if (this.newTodo.trim()) {
+      if (this.newTodo.trim() && this.desc.trim()) {
         this.todos.push({
           id: new Date().getTime(),
           text: this.newTodo,
           completed: false,
+          desc: this.desc,
         })
       } 
-      this.newTodo = ""
+      this.newTodo = "",
+      this.desc = ""
     },
     deleteTodo(id: number) {
       this.todos = this.todos.filter((todo) => todo?.id !== id)

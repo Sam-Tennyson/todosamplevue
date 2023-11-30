@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import TodoHeader from './components/TodoHeader.vue';
+import TodoHeader from "@/components/TodoHeader.vue"
 </script>
 <template>
   <TodoHeader />
@@ -9,7 +9,6 @@ import TodoHeader from './components/TodoHeader.vue';
 </template>
 <style scoped>
 .navbar {
-  @apply bg-slate-600 p-4 text-white rounded-md
+  @apply bg-slate-600 p-4 text-white rounded-md;
 }
 </style>
-
