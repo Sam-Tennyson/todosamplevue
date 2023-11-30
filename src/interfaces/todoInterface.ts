@@ -18,3 +18,8 @@ export interface IDummyData {
     name: string;
     username: string;
 }
+
+export interface TodoItemProps {
+  todo: ITodo;
+  index: number;
+}

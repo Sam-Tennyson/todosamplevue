@@ -53,10 +53,11 @@ const handleAddTodo = () => {
       </div>
     </div>
   <div class="flex items-center justify-end">
-    <TodoButton v-on:button-click-event="openModal()">
+    <TodoButton @button-click-event="openModal()">
       <i class="pi pi-file-edit"></i>
       Add Todo
     </TodoButton>
+    
   </div>
   <div>
     <div class="grid grid-flow-row gap-8 text-neutral-600 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xxl:grid-cols-4">

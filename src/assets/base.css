@@ -56,5 +56,5 @@
 }
 
 .btn {
-  @apply rounded-lg px-3 py-1 min-w-[100px] bg-[#eeb3b3]
+  @apply rounded-lg px-3 py-1 min-w-[50px] gap-2 bg-[#eeb3b3] flex justify-between items-center
 }

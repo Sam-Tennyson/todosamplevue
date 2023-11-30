@@ -26,7 +26,7 @@ export const useTodoStore = defineStore('todo', {
     deleteTodo(id: number) {
       this.todos = this.todos.filter((todo) => todo?.id !== id)
     },
-    editTodo(id: number, text: string, desc: string) {
+    editTodo(id: number, text?: string, desc?: string) {
       if (text) {
         this.todos[id].text = text
       }
@@ -34,8 +34,8 @@ export const useTodoStore = defineStore('todo', {
         this.todos[id].desc = desc
       }
     },
-    toggleCompleted(id: number) {
-      this.todos[id].completed = !this.todos[id].completed
+    toggleCompleted(index: number) {
+      this.todos[index].completed = !this.todos[index].completed
     },
     setDummyData(data: IDummyData[]) {
       this.dummyData = data
