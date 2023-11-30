@@ -1,6 +1,4 @@
 <script setup lang="ts">
-/* Code generated with AutoHTML Plugin for Figma */
-import { defineProps } from "vue";
 
 // defineProps({});
 </script>

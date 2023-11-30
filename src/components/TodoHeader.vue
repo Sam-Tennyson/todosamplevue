@@ -17,7 +17,7 @@ import { RouterLink } from 'vue-router'
 <template>
   <img :src="backgrouundImage" alt="bg-image" />
   <div
-    class="bg-[rgba(100,94,94,0.69)] px-5 py-3 flex flex-row items-center justify-between fixed top-0 right-0 left-0"
+    class="bg-[rgba(100,94,94,0.69)] px-5 py-2 flex flex-row items-center justify-between fixed top-0 right-0 left-0"
     style="box-shadow: 0px 4px 4px 0px rgba(217, 217, 217, 0.94)"
   >
     <div class="text-[#ffffff] text-left relative flex-1 font-bold text-2xl">
